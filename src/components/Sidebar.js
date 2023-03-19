@@ -1,5 +1,5 @@
 import React from 'react'
-import './sidebar.min.css'
+import './sidebar.css'
 
 export const Sidebar = ({groups,openModalFunc,activeNote,setActiveNote,notes,setNotes,setNewNote}) => {
 
@@ -17,7 +17,7 @@ export const Sidebar = ({groups,openModalFunc,activeNote,setActiveNote,notes,set
             
             }}
             >
-            <span class="dot" style={{backgroundColor: group.bgcolor}}><small className='icon-text'>{`${group.title}`.split(" ").map((n)=>n[0]).join("").toUpperCase()}</small></span>
+            <span className="dot" style={{backgroundColor: group.bgcolor}}><small className='icon-text'>{`${group.title}`.split(" ").map((n)=>n[0]).join("").toUpperCase()}</small></span>
             <h4>{group.title}</h4>
         </div>
         ))}

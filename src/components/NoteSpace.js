@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import './notespace.min.css'
-
+import './notespace.css'
+import vector from './Vector.png'
 
 export const NoteSpace = ({groups,onUpdateNote,activeNote,handleText,notes,handleSubmit,newNote,setNewNote,setNotes}) => {
     
@@ -14,7 +14,6 @@ export const NoteSpace = ({groups,onUpdateNote,activeNote,handleText,notes,handl
 
         setNewNotes(oldList => [...oldList,item.value])
         
-        // console.log(groups[1].id)
         
     }
     if(!activeNote) return <div className='no-notes-div'></div>
@@ -71,12 +70,12 @@ export const NoteSpace = ({groups,onUpdateNote,activeNote,handleText,notes,handl
         <div className='text-area-wrap'>
             <textarea onChange={(e)=> {onEditField("body",e.target.value);  }} value={activeNote.body} className="" placeholder='Enter your text here...........'>
             </textarea>
-            <button onClick={()=> {
+            <img onClick={()=> {
                 onEditField('part',newNote)
                 addItems()
                 
-                console.log(groups[0])
-                }}>Submit</button>
+                }} 
+                className="submit-btn" src={vector} alt="submit btn" />
             
 
         </div>

@@ -1,4 +1,4 @@
-import './modal.min.css'
+import './modal.css'
 
 
 const Modal = ({addGroup,handleChange,handleColor}) =>{
