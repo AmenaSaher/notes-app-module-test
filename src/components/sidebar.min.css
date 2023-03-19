@@ -1,0 +1,65 @@
+.title-pocket{
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-weight:bolder;
+}
+
+.sidebar-wrap{
+
+    width: 30vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.create-btn{
+    width: 343px;
+    height: 45px;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    font-size: large;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.create-btn:hover{
+    background-color: #2e2e2e;
+    cursor: pointer;
+}
+
+.group-name{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 17px;
+    height: 70px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.dot {
+    height: 40px;
+    width: 40px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    margin-left: 20px;
+  }
+
+  .group-name.active{
+    background-color: #F7ECDC;
+  }
+
+  .icon-text{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+transform: translateX(-50%);
+    font-size: large;
+    font-weight: 900;
+    color: white;
+  }

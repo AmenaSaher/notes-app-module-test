@@ -1,0 +1,71 @@
+.no-notes-div{
+    width: 70%;
+    height: 100vh;
+    background-color: #E8E8E8;
+}
+
+.header{
+    display: flex;
+    background-color: #E8E8E8;
+    width: 70vw;
+    height: 60px;
+    align-items: center;
+    gap: 20px;
+}
+
+.dot2 {
+    height: 40px;
+    width: 40px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    margin-left: 20px;
+}
+
+.main-notes{
+    background-color: #F7ECDC;
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    gap: 20px;
+    height: 30vh;
+}
+
+.time-date{
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    width: 300px;
+    height: 50px;
+}
+.notes-wrapper{
+    background-color: #F7ECDC;
+    overflow: auto;
+    height: 70%;
+}
+
+.text-area-wrap{
+    background-color: #E8E8E8;
+    padding: 10px;
+    width: 70vw;
+}
+textarea {
+    width: 100%;
+    padding: 20px;
+    resize: none;
+    outline: none;
+    border-radius: 9px;
+    height: 100px;
+}
+
+.icon-text-notes{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+transform: translateX(-50%);
+    font-size: large;
+    color: white;
+    font-weight: 900;
+}
